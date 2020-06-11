@@ -1,2 +1,2 @@
-# typescript-advanced-types
-typescript advanced types
+# typescript
+typescript
