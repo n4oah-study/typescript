@@ -26,3 +26,5 @@ const person: Person & Animal = {
 };
 
 console.log('person', person);
+
+export {};
