@@ -1,3 +1,5 @@
+// 조건부 타입
+
 type TypeName<T> =
     T extends string ? "string" :
     T extends number ? "number" :
@@ -11,3 +13,6 @@ type T1 = TypeName<"a">;  // "string"
 type T2 = TypeName<true>;  // "boolean"
 type T3 = TypeName<() => void>;  // "function"
 type T4 = TypeName<string[]>;  // "object"
+type T5 = TypeName<string | (() => void)>; // "string" | "function"
+
+export {};
