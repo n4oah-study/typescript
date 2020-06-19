@@ -13,6 +13,9 @@
   - toMatch(정규식): 정규식 검사 함
   - toThrow(정규식|문자열): 문자열을 넘기면 예외 메세지를 비교하고 정규식을 넘기면 정규식 체크를 해 줌
     - toThrow를 사용할 땐 파라미터를 함수로 넘겨주어야 함: expect(() => getUser(-1).toThrow("Invalid ID"))
+  - toBeNull(): null이면 성공
+  - toBeUndefined(): undefined면 성공
+  - toBeDefined(): undefined의 반대면 성공
 
 ### Jest Mock
 
